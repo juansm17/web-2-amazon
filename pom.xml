@@ -94,7 +94,20 @@
                 <plugin>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>2.8.2</version>
-                </plugin>
+              <configuration>
+            <artifactItems>
+            <artifactItem>
+            <groupId>com.heroku</groupId>
+            <artifactId>webapp-runner</artifactId>
+            <version>9.0.30.0</version>
+            <destFileName>webapp-runner.jar</destFileName>
+            </artifactItem>
+            </artifactItems>
+            
+            <artifactId></artifactId>
+            </configuration>
+             </executions>
+            </plugin>
             </plugins>
         </pluginManagement>
     </build>
